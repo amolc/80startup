@@ -230,13 +230,13 @@ padding:0px;
 }
 /*############################## Add_Startup CSS######################################*/
 .setup-content .nextBtn{
-    border-radius: 50px;
-    padding: 10px 80px;
-    background: none;
-    color: rgb(25, 100, 127);
-    border: 3px solid;
-    font-size: 22px;
-    margin-top: 50px;
+  border-radius: 50px;
+  padding: 10px 45px;
+  background: none;
+  color: rgb(25, 100, 127);
+  border: 2px solid;
+  font-size: 22px;
+  margin-top: 50px;
 }
 .form-group .add_startup_input{
     border: 3px solid rgb(234, 234, 234);
@@ -248,7 +248,7 @@ padding:0px;
   padding: 16px;
   text-align: center;
   border-radius: 50%;
-  width: 65px;
+  width: 70px;
   height: auto;
   display: inline-block;
   color: #fff;
@@ -594,6 +594,11 @@ footer {
     }
 
 /****************************PROFILE_CSS****************************/
+.media img{
+    max-width: 150px;
+  border: 4px solid #ECECEC;
+  margin-right: 10px;
+}
 .fb-profile img.fb-image-lg{
     z-index: 0;
     width: 100%;  
