@@ -65,11 +65,10 @@
                     <label class="control-label">Company Name</label>
                     <input  maxlength="100" type="text" required="required" class="form-control add_startup_input" placeholder="Enter company name"  />
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="position: relative;">
                     <label class="control-label">Company Logo</label>
-                    <span>
-                    <input  type="file" class="form-control add_startup_input"/>
-                    </span>
+                    <span id="company_logo_span">Upload company logo</span>
+                    <input  type="file" class="form-control add_startup_input" id="company_logo" />
                 </div>
                 <div class="form-group">
                     <label class="control-label">High-Concept Pitch</label>
