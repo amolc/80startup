@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
+ <link rel="stylesheet" href="/lib/bootstrap-3.3.4/css/bootstrap.min.css">
+ <link rel="stylesheet" href="/lib/css/style.css">
+
+</head>
+<body>
+<% if ( userFullName ) { %>
+<h2>Hello <%=userFullName%> </h2>
+<a href="/signout">Sign out</a>
+<% } else { %>
+   <div class="navbar navbar-default navbar-fixed-top">
+        <!-- pass scroll-me class above a tags to starts scrolling -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png"  alt="Logo"/>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/signup">Add Your Startup</a></li>
+                    <li><a href="/signin">SignIn</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- NAVBAR END  -->
+
+<% } %>
+<br>
+
+<section>
+<input type="text" id="text1" ng-model="name">
+<input type="text" id="text2" ng-model="name">
+</section>
+
+<script type="text/javascript" src="/lib/angular/angular.js"></script>
+<script type="text/javascript" src="/application.js"></script>
+
+</body>
+</html>
